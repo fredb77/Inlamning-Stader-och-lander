@@ -1,0 +1,37 @@
+
+nav {
+    background-color: black;
+    padding: 20px;
+}
+
+.rub {
+    color: lime;
+}
+
+#info {
+    width: 450px;
+}
+
+.main {
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 400px;
+}
+
+a {
+    color: silver;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+#output {
+    display: inline-flex;
+}
+
+.besokt {
+    display: box; 
+    margin-left: 8px;
+}
