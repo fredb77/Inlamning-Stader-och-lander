@@ -7,7 +7,7 @@
 */
 
 // requestar land.json
-fetch("json/land.json")
+fetch("https://azurelander.azurewebsites.net/land")
 .then(function(resp) {
     return resp.json();
 })
@@ -18,7 +18,7 @@ fetch("json/land.json")
 })
 
 // requestar stad.json
-fetch("json/stad.json")
+fetch("https://azurelander.azurewebsites.net/stad")
 .then(function(resp) {
     return resp.json();
 })
@@ -45,6 +45,7 @@ fetch("json/stad.json")
                     document.getElementById(landId).innerHTML += "<button onclick=\"town_btn(this.value)\" id='infoBtn' value='" + stad[a].id + "' class='dropdown-item' type='button'>" + stad[a].stadname + "</button>";
                 }
             }
+            document.getElementById(landId).innerHTML += "<a href='https://azurelander.azurewebsites.net/newstad.html?lid=" + landId + "'>Lägg till ny stad</a>";
             document.getElementById("output").innerHTML += "</div></div></div>&nbsp;";
         }   
         landId++;
